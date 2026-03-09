@@ -1997,9 +1997,19 @@
           }
         ],
         "description": "e-bank STRIDE"
+      },
+      {
+        "id": 1,
+        "title": "Online Shop",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": [],
+        "description": "Online Shop STRIDE"
       }
     ],
-    "diagramTop": 1,
+    "diagramTop": 2,
     "reviewer": "Cybersecurity Architect",
     "threatTop": 5
   }
