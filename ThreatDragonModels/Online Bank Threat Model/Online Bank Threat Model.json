@@ -2290,8 +2290,8 @@
             },
             "vertices": [
               {
-                "x": 1140,
-                "y": 140
+                "x": 1180,
+                "y": 120
               }
             ]
           },
@@ -2471,7 +2471,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Payment Method",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2485,7 +2485,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Payment Method"
             ],
             "id": "9dce60bb-3e41-4a1d-bf9d-1416445d790c",
             "source": {
@@ -2495,7 +2495,13 @@
             "target": {
               "cell": "c58460c6-7a83-4355-8493-2d438e6b4702",
               "port": "749f8bcc-ebc5-4bc5-b8f1-5bd1958cea96"
-            }
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 140
+              }
+            ]
           },
           {
             "position": {
@@ -2830,10 +2836,38 @@
             },
             "vertices": [
               {
-                "x": 390,
-                "y": 140
+                "x": 400,
+                "y": 100
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 15,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "bfaac823-f26c-4858-be27-579c99fdbf53",
+            "source": {
+              "x": 310,
+              "y": 10
+            },
+            "target": {
+              "x": 310,
+              "y": 480
+            }
           }
         ],
         "description": "Online Shop STRIDE"
