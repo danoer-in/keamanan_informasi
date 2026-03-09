@@ -2290,7 +2290,7 @@
             },
             "vertices": [
               {
-                "x": 1180,
+                "x": 1270,
                 "y": 120
               }
             ]
@@ -2394,8 +2394,8 @@
             },
             "vertices": [
               {
-                "x": 1230,
-                "y": 220
+                "x": 1280,
+                "y": 210
               }
             ]
           },
@@ -2505,7 +2505,7 @@
           },
           {
             "position": {
-              "x": 970,
+              "x": 1060,
               "y": 135
             },
             "size": {
@@ -2667,14 +2667,14 @@
             },
             "vertices": [
               {
-                "x": 790,
-                "y": 120
+                "x": 810,
+                "y": 110
               }
             ]
           },
           {
             "position": {
-              "x": 1313,
+              "x": 1540,
               "y": 135
             },
             "size": {
@@ -2861,12 +2861,46 @@
             ],
             "id": "bfaac823-f26c-4858-be27-579c99fdbf53",
             "source": {
-              "x": 310,
+              "x": 290,
               "y": 10
             },
             "target": {
-              "x": 310,
+              "x": 290,
               "y": 480
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 16,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "cfba524e-f55b-4408-9820-eae91ede916b",
+            "source": {
+              "x": 750,
+              "y": 10
+            },
+            "target": {
+              "x": 750,
+              "y": 470
             }
           }
         ],
