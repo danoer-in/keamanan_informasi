@@ -2504,6 +2504,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Transactin Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Payment Transactin Data"
+            ],
+            "id": "8b289aea-897b-41c2-a1ec-57007e241a14",
+            "source": {
+              "cell": "c58460c6-7a83-4355-8493-2d438e6b4702",
+              "port": "d896e578-daf6-4c7f-a05f-308608834067"
+            },
+            "target": {
+              "cell": "a884d797-d927-4345-98c3-1c28988ecf2e",
+              "port": "3281f50e-3aa2-4ab2-8ba3-b2f9292ff86b"
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": 110
+              }
+            ]
+          },
+          {
             "position": {
               "x": 1060,
               "y": 135
@@ -2619,58 +2671,6 @@
               "providesAuthentication": false,
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 12,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Payment Transaction Data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Payment Transaction Data"
-            ],
-            "id": "541f21f8-a74c-46d2-b469-45234106db06",
-            "source": {
-              "cell": "c58460c6-7a83-4355-8493-2d438e6b4702",
-              "port": "d896e578-daf6-4c7f-a05f-308608834067"
-            },
-            "target": {
-              "cell": "a884d797-d927-4345-98c3-1c28988ecf2e",
-              "port": "3281f50e-3aa2-4ab2-8ba3-b2f9292ff86b"
-            },
-            "vertices": [
-              {
-                "x": 810,
-                "y": 110
-              }
-            ]
           },
           {
             "position": {
@@ -2915,6 +2915,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Cybersecurity Architect",
-    "threatTop": 5
+    "threatTop": 6
   }
 }
