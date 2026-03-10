@@ -2263,58 +2263,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Payment Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Payment Request"
-            ],
-            "id": "60329a83-c573-4abe-bcd8-c6769c0e5ea1",
-            "source": {
-              "cell": "a884d797-d927-4345-98c3-1c28988ecf2e",
-              "port": "c8554b40-ee5a-4699-8c7c-cb0bcfe53887"
-            },
-            "target": {
-              "cell": "01ea104b-d554-46f3-aac4-dc9e125dbf54",
-              "port": "3281f50e-3aa2-4ab2-8ba3-b2f9292ff86b"
-            },
-            "vertices": [
-              {
-                "x": 1270,
-                "y": 120
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Confirmation Payment",
               "description": "",
               "outOfScope": false,
@@ -2419,58 +2367,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Payment Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Payment Response"
-            ],
-            "id": "98595500-af56-48be-886b-cb3f12d5ce72",
-            "source": {
-              "cell": "a884d797-d927-4345-98c3-1c28988ecf2e",
-              "port": "3281f50e-3aa2-4ab2-8ba3-b2f9292ff86b"
-            },
-            "target": {
-              "cell": "c58460c6-7a83-4355-8493-2d438e6b4702",
-              "port": "d896e578-daf6-4c7f-a05f-308608834067"
-            },
-            "vertices": [
-              {
-                "x": 820,
-                "y": 220
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Payment Method",
               "description": "",
               "outOfScope": false,
@@ -2507,7 +2403,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2528,13 +2425,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "a45f7af5-74c9-461c-91f4-7446a78e2d8e",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "- Data transaksi disadap saat dikirim ke gateway\n- Penyerang mengubah nilai transaksi.",
+                  "mitigation": "- HTTPS / TLS\n- Digital signature\n- Transaction ID unik",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Payment Transactin Data"
@@ -2552,6 +2468,150 @@
               {
                 "x": 830,
                 "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "075a1179-d630-42a2-a48a-9464feda7912",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "- Pemalsuan Request",
+                  "mitigation": "- Timestamp validation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Payment Request"
+            ],
+            "id": "60329a83-c573-4abe-bcd8-c6769c0e5ea1",
+            "source": {
+              "cell": "a884d797-d927-4345-98c3-1c28988ecf2e",
+              "port": "c8554b40-ee5a-4699-8c7c-cb0bcfe53887"
+            },
+            "target": {
+              "cell": "01ea104b-d554-46f3-aac4-dc9e125dbf54",
+              "port": "3281f50e-3aa2-4ab2-8ba3-b2f9292ff86b"
+            },
+            "vertices": [
+              {
+                "x": 1270,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f4d6e7ae-7d94-47f0-8d79-726d454df1bc",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Status transaksi diubah menjadi \"success\"",
+                  "mitigation": "- Signature verification\n- Callback verification\n- API authentication",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Payment Response"
+            ],
+            "id": "98595500-af56-48be-886b-cb3f12d5ce72",
+            "source": {
+              "cell": "a884d797-d927-4345-98c3-1c28988ecf2e",
+              "port": "3281f50e-3aa2-4ab2-8ba3-b2f9292ff86b"
+            },
+            "target": {
+              "cell": "c58460c6-7a83-4355-8493-2d438e6b4702",
+              "port": "d896e578-daf6-4c7f-a05f-308608834067"
+            },
+            "vertices": [
+              {
+                "x": 820,
+                "y": 220
               }
             ]
           },
@@ -2915,6 +2975,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Cybersecurity Architect",
-    "threatTop": 6
+    "threatTop": 9
   }
 }
